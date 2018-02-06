@@ -3,7 +3,6 @@
   "description": "GoTrue API client for JavaScript",
   "version": "0.9.19",
   "author": "Mathias Biilmann Christensen",
-  "bugs": "https://github.com/netlify/micro-api-client-lib/issues",
   "dependencies": {
     "micro-api-client": "^3.2.1"
   },
@@ -22,7 +21,7 @@
     "prettier": "^1.10.1",
     "uglify-js": "^2.6.2"
   },
-  "homepage": "https://github.com/netlify/gotrue-js",
+  "homepage": "https://github.com/kantle/gotrue-js",
   "keywords": [
     "api",
     "gotrue",
@@ -33,7 +32,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netlify/gotrue-js.git"
+    "url": "git+https://github.com/kantle/gotrue-js.git"
   },
   "scripts": {
     "babelify": "browserify src/index.js -t [ babelify --presets [ env ] --plugins syntax-object-rest-spread,transform-object-rest-spread ] | uglifyjs > browser/gotrue.js",
