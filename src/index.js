@@ -56,7 +56,7 @@ export default class GoTrue {
   }
 
   login(email, password, remember) {
-    this._setRememberHeaders(remember);
+    //this._setRememberHeaders(remember);
     return this._request("/token", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -64,7 +64,7 @@ export default class GoTrue {
         email
       )}&password=${encodeURIComponent(password)}`
     }).then(response => {
-      User.removeSavedSession();
+      //User.removeSavedSession();
       return this.createUser(response, remember);
     });
   }
@@ -74,7 +74,8 @@ export default class GoTrue {
   }
 
   confirm(token, remember) {
-    this._setRememberHeaders(remember);
+    this.
+    (remember);
     return this.verify("signup", token, remember);
   }
 
@@ -86,7 +87,8 @@ export default class GoTrue {
   }
 
   recover(token, remember) {
-    this._setRememberHeaders(remember);
+    this.
+    (remember);
     return this.verify("recovery", token, remember);
   }
 
