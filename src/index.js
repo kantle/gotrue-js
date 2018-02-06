@@ -74,8 +74,6 @@ export default class GoTrue {
   }
 
   confirm(token, remember) {
-    this.
-    (remember);
     return this.verify("signup", token, remember);
   }
 
@@ -87,8 +85,6 @@ export default class GoTrue {
   }
 
   recover(token, remember) {
-    this.
-    (remember);
     return this.verify("recovery", token, remember);
   }
 
